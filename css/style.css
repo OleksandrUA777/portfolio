@@ -1,0 +1,129 @@
+:root {
+  --main-dark: #000000;
+  --light-dark: #181823;
+  --light-gray: #deecf9;
+  --dark-gray: #c7e0f4;
+  --main-white: #fff;
+  --blue-color: #5221e6;
+  --green-color: #3cc74e;
+  --pink-color: #e95d90;
+  --yellow-color: #fff3e4;
+  --violet-color: #fbe4ff;
+}
+body {
+  font-family: "Sen";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--main-white);
+}
+/* reset */
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* utils */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.section {
+  max-width: 1920px;
+}
+.container {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Header section*/
+.header-section {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+
+  outline: 2px solid yellow;
+}
+.header-container {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__logo {
+  margin-right: auto;
+}
+.nav-list {
+  display: flex;
+}
+.nav__link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /* Можлифо фіол. це ховер, тому у 1 не очищую padding-left */
+  padding-right: 24px;
+  padding-left: 24px;
+
+  line-height: 1.5;
+
+  color: var(--main-white);
+}
+.nav__link--selected {
+  background-color: var(--blue-color);
+}
+/* Hero section */
+.hero {
+}
+/* .grey-color {
+  background-color: #181823;
+} */
+.hero-container {
+  padding-top: 158px;
+  padding-bottom: 82px;
+  padding-right: 40px;
+
+  background-color: var(--main-dark);
+}
+.hero-img {
+  width: 750px;
+  height: 650px;
+}
+.hero-text-wrapper {
+  position: absolute;
+  left: 702px;
+  top: 299px;
+}
+.hero__header {
+  width: 738px;
+  font-weight: 700;
+  font-size: 78px;
+  line-height: calc(94 / 78);
+
+  margin-bottom: 32px;
+
+  color: #ffffff;
+}
+
+.hero__span {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero__description {
+  width: 738px;
+  font-size: 18px;
+  line-height: 1.5;
+}
