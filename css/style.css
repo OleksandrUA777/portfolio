@@ -80,14 +80,18 @@ img {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* Можлифо фіол. це ховер, тому у 1 не очищую padding-left */
   padding-right: 24px;
   padding-left: 24px;
 
+  transition: background-color 250ms linear;
+
   color: var(--main-white);
 }
+.nav__link:hover,
+.nav__link:focus {
+  background-color: var(--purple-color);
+}
 .nav__link--selected {
-  background-color: var(--blue-color);
 }
 /* Hero section */
 .hero {
