@@ -1,5 +1,6 @@
 :root {
   --main-dark: #000000;
+  --main-gray: #8491a0;
   --light-dark: #181823;
   --light-gray: #deecf9;
   --dark-gray: #c7e0f4;
@@ -14,6 +15,8 @@ body {
   font-family: "Sen";
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
+
   color: var(--main-white);
 }
 /* reset */
@@ -81,8 +84,6 @@ img {
   padding-right: 24px;
   padding-left: 24px;
 
-  line-height: 1.5;
-
   color: var(--main-white);
 }
 .nav__link--selected {
@@ -129,7 +130,6 @@ img {
 .hero__description {
   width: 738px;
   font-size: 18px;
-  line-height: 1.5;
 }
 /* Companies */
 .companies {
@@ -144,13 +144,12 @@ img {
 }
 .companies__title {
   font-weight: 700;
-  line-height: 1.5;
 
   text-transform: uppercase;
 
   margin-bottom: 8px;
 
-  color: #8491a0;
+  color: var(--main-gray);
 }
 .companies__header {
   width: 690px;
@@ -169,7 +168,7 @@ img {
 .companies__item {
 }
 .companies__icon {
-  fill: #8491a0;
+  fill: var(--main-gray);
 }
 .companies-wrapper {
   padding-right: 48px;
@@ -177,7 +176,6 @@ img {
 .companies__job {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.5;
 
   margin-bottom: 22px;
 }
@@ -194,9 +192,8 @@ img {
 }
 .companies__description {
   width: 368px;
-  line-height: 1.5;
 
-  color: #8491a0;
+  color: var(--main-gray);
 }
 /* values section */
 .values-container {
@@ -221,7 +218,6 @@ img {
   width: 576px;
 
   font-size: 18px;
-  line-height: 1.5;
 
   margin-bottom: 134px;
 
@@ -230,8 +226,6 @@ img {
 .values__link {
   position: relative;
   display: block;
-
-  line-height: 1.5;
 
   color: var(--light-dark);
 }
@@ -246,5 +240,50 @@ img {
   width: 116px;
   height: 1px;
 
-  background-color: #8491a0;
+  background-color: var(--main-gray);
+}
+/* skills */
+.skills-container {
+  display: flex;
+  padding: 120px 72px;
+
+  background-color: var(--main-dark);
+}
+.skills-header {
+  padding-right: 48px;
+  margin-right: 24px;
+}
+.skills-header__title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: calc(66 / 55);
+
+  margin-bottom: 24px;
+}
+.skills-header__description {
+  width: 368px;
+  font-size: 18px;
+
+  color: var(--main-gray);
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.skills__item {
+  padding-right: 48px;
+  width: calc((100% - 24px) / 2);
+}
+.skills__icon {
+  margin-bottom: 24px;
+}
+.skills__job {
+  margin-bottom: 12px;
+}
+.skills__description {
+  width: 368px;
+  color: var(--main-gray);
 }
