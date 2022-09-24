@@ -464,7 +464,7 @@ p {
    color: var(--main-white);
 } */
 /* Review section */
-.reviews {
+/* .reviews {
    background-color: var(--main-dark);
    padding: 120px 72px;
 }
@@ -535,9 +535,9 @@ p {
    font-size: 18px;
 
    color: #5b6876;
-}
+} */
 /* Photos section */
-.photos {
+/* .photos {
    background-color: var(--main-dark);
 }
 .photos__container {
@@ -579,7 +579,7 @@ p {
 .photos__item {
 }
 .photos__img {
-}
+} */
 /* КОЛГОСП Типо таби на css + html ще не навчився робити правильно */
 /* .photos-list {
   display: none;
@@ -610,7 +610,7 @@ p {
 } */
 
 /* Form */
-.form {
+/* .form {
    background-color: var(--main-dark);
 }
 .form__container {
@@ -677,20 +677,20 @@ p {
 .form__button {
    width: 100%;
    padding: 24px 32px;
-}
+} */
 /* Footer */
-.footer {
+/* .footer {
    background-color: var(--light-dark);
 }
 .footer__container {
    display: flex;
 
    padding: 80px 182px 80px 72px;
-}
+} */
 /* .footer__logo {
    margin-bottom: 32px;
 } */
-.footer__left-part {
+/* .footer__left-part {
    margin-right: auto;
 }
 .footer-left-part__list {
@@ -738,4 +738,4 @@ p {
 }
 .footer-center__link:hover {
    text-decoration: underline;
-}
+} */

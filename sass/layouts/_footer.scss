@@ -1,0 +1,64 @@
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer {
+   background-color: var(--light-dark);
+}
+.footer__container {
+   display: flex;
+
+   padding: 80px 182px 80px 72px;
+}
+.footer__left-part {
+   margin-right: auto;
+}
+.footer-left-part__list {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.icon {
+   &--twitter {
+      fill: #26a7de;
+   }
+   &--dribble {
+      fill: #e94b88;
+   }
+   &--linkedin {
+      fill: #0077b5;
+   }
+}
+
+.footer-left-part__icon {
+   transition: fill 250ms linear;
+
+   .footer-left-part__link:hover &,
+   .footer-left-part__link:focus & {
+      fill: var(--purple-color);
+   }
+}
+
+.footer-center__wrapper {
+   display: flex;
+}
+.footer-center__list--right {
+   margin-right: 220px;
+}
+.footer-center__item {
+}
+.footer-center__link {
+   display: inline-block;
+   padding-bottom: 16px;
+
+   color: var(--main-white);
+
+   &:last-child {
+      padding-bottom: 16px;
+   }
+   &:hover {
+      text-decoration: underline;
+   }
+}

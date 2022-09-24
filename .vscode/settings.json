@@ -14,5 +14,44 @@
    "liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**"],
    "liveSassCompile.settings.generateMap": true,
    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
-   "liveServer.settings.port": 7777
+   "liveServer.settings.port": 7777,
+
+   "editor.tokenColorCustomizations": {
+      "textMateRules": [
+         {
+            "scope": ["comment"],
+            "settings": {
+               // "foreground": "#a8ff83f9"
+            }
+         },
+         // colour of attributes
+         {
+            "scope": ["entity.other.attribute-name.html"],
+            "settings": {
+               // "foreground": "#ff6464"
+            }
+         },
+         // colour of class names
+         {
+            "scope": ["string.quoted.double.html", "entity.other.attribute-name.class.css"],
+            "settings": {
+               // "foreground": "#6c6c6cf9"
+            }
+         },
+         // colour of start quotes
+         {
+            "scope": ["punctuation.definition.string.begin.html"],
+            "settings": {
+               // "foreground": "#ff0000"
+            }
+         },
+         // colour of end quotes
+         {
+            "scope": ["punctuation.definition.string.end.html"],
+            "settings": {
+               // "foreground": "#5e1414"
+            }
+         }
+      ]
+   }
 }
