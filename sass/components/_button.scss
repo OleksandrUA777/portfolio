@@ -1,0 +1,24 @@
+/**
+  |============================
+  | Button
+  |============================
+*/
+.button {
+   font-weight: 700;
+   font-size: 18px;
+
+   text-transform: uppercase;
+   text-align: center;
+   cursor: pointer;
+
+   color: var(--main-white);
+   border: 1px solid var(--purple-color);
+   background-color: transparent;
+
+   transition: background-color 250ms linear;
+
+   &:hover,
+   &:focus {
+      background-color: var(--purple-color);
+   }
+}

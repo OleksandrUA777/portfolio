@@ -1,0 +1,37 @@
+/**
+  |============================
+  | Brands
+  |============================
+*/
+.brands {
+   background-color: var(--main-dark);
+}
+.brands__container {
+}
+.brands-slider__item {
+   width: 349px !important;
+   border: 1px solid var(--light-dark);
+
+   transition: background-color 250ms linear;
+
+   &:hover,
+   &:focus {
+      background-color: var(--purple-color);
+   }
+}
+.brands-slider__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   /* width: 340px; */
+   height: 140px;
+   background-color: transparent;
+}
+
+.slick-prev:before {
+   content: '';
+}
+.slick-next:before {
+   content: '';
+}

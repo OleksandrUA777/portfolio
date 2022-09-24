@@ -1,0 +1,29 @@
+/**
+  |============================
+  | Nav
+  |============================
+*/
+.nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.nav__list {
+   display: flex;
+}
+.nav__link {
+   display: inline-block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   padding-right: 24px;
+   padding-left: 24px;
+
+   transition: background-color 250ms linear;
+
+   color: var(--main-white);
+
+   &:hover,
+   &:focus {
+      background-color: var(--purple-color);
+   }
+}

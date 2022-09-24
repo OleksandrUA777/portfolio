@@ -1,0 +1,37 @@
+/**
+  |============================
+  | Dribble
+  |============================
+*/
+
+.dribble {
+   padding-top: 120px;
+   padding-bottom: 120px;
+   background-color: var(--main-dark);
+}
+.dribble__container {
+   padding-right: 182px;
+   padding-left: 182px;
+}
+
+.dribble__wrapper {
+   margin-bottom: 120px;
+}
+.dribble__title {
+   font-weight: 700;
+   font-size: 55px;
+   line-height: calc(66 / 55);
+
+   margin-bottom: 24px;
+}
+.dribble__description {
+   width: 636px;
+   font-size: 18px;
+
+   margin-bottom: 40px;
+
+   color: var(--main-gray);
+}
+.dribble__link {
+   color: var(--main-white);
+}

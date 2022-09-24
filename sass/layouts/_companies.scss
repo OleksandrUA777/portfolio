@@ -1,0 +1,67 @@
+/**
+  |============================
+  | Companies
+  |============================
+*/
+
+.companies {
+   background-color: var(--main-dark);
+}
+.companies__container {
+   padding-top: 120px;
+   padding-bottom: 120px;
+   padding-right: 72px;
+   padding-left: 72px;
+}
+.companies__title {
+   font-weight: 700;
+
+   text-transform: uppercase;
+
+   margin-bottom: 8px;
+
+   color: var(--main-gray);
+}
+.companies__header {
+   width: 690px;
+
+   font-weight: 700;
+   font-size: 55px;
+   line-height: calc(66 / 55);
+
+   margin-bottom: 40px;
+}
+.companies__list {
+   display: flex;
+   align-items: center;
+   gap: 24px;
+}
+.companies__icon {
+   fill: var(--main-gray);
+}
+.companies__wrapper {
+   padding-right: 48px;
+}
+.companies__job {
+   font-weight: 700;
+   font-size: 24px;
+
+   margin-bottom: 22px;
+}
+.companies__span {
+   &--green {
+      color: var(--green-color);
+   }
+   &--blue {
+      color: #609bff;
+   }
+   &--pink {
+      color: var(--pink-color);
+   }
+}
+
+.companies__description {
+   width: 368px;
+
+   color: var(--main-gray);
+}

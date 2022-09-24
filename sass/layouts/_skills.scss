@@ -1,0 +1,51 @@
+/**
+  |============================
+  | Skills
+  |============================
+*/
+.skills {
+   padding: 120px 72px;
+
+   background-color: var(--main-dark);
+}
+.skills__container {
+   display: flex;
+}
+.skills__text-wrapper {
+   padding-right: 48px;
+   margin-right: 24px;
+}
+.skills-header__title {
+   font-weight: 700;
+   font-size: 55px;
+   line-height: calc(66 / 55);
+
+   margin-bottom: 24px;
+}
+.skills-header__description {
+   width: 368px;
+   font-size: 18px;
+
+   color: var(--main-gray);
+}
+.skills__list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+}
+.skills__item {
+   padding-right: 48px;
+   width: calc((100% - 24px) / 2);
+}
+.skills__icon {
+   margin-bottom: 24px;
+}
+.skills__job {
+   margin-bottom: 12px;
+}
+.skills__description {
+   width: 368px;
+   color: var(--main-gray);
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
    --main-dark: #000000;
    --main-gray: #8491a0;
    --light-dark: #181823;
@@ -10,17 +10,17 @@
    --pink-color: #e95d90;
    --yellow-color: #fff3e4;
    --violet-color: #fbe4ff;
-}
-body {
+} */
+/* body {
    font-family: 'Sen';
    font-weight: 400;
    font-size: 16px;
    line-height: 1.5;
 
    color: var(--main-white);
-}
+} */
 /* reset */
-h1,
+/* h1,
 h2,
 h3,
 ul,
@@ -28,31 +28,30 @@ li,
 p {
    margin: 0;
    padding: 0;
-}
+} */
 /* utils */
-img {
+/* img {
    display: block;
    max-width: 100%;
    height: auto;
-}
+} */
 .list {
    list-style: none;
 }
 .link {
    text-decoration: none;
 }
-.section {
+/* .section {
    max-width: 1920px;
    margin-right: auto;
    margin-left: auto;
-}
-.container {
+} */
+/* .container {
    width: 1440px;
-   /* outline: 2px solid green; */
    margin-left: auto;
    margin-right: auto;
-}
-.visually-hidden {
+} */
+/* .visually-hidden {
    position: absolute;
    white-space: nowrap;
    width: 1px;
@@ -63,9 +62,9 @@ img {
    clip: rect(0 0 0 0);
    clip-path: inset(50%);
    margin: -1px;
-}
+} */
 /* Header section*/
-.header {
+/* .header {
    position: absolute;
    z-index: 100;
    text-align: center;
@@ -77,20 +76,20 @@ img {
 .header__container {
    padding-left: 72px;
    padding-right: 72px;
-}
-.nav {
+} */
+/* .nav {
    display: flex;
    align-items: center;
    justify-content: center;
-}
-.logo {
+} */
+/* .logo {
    display: block;
-}
-.nav__logo {
+} */
+/* .nav__logo {
    margin-right: auto;
-}
+} */
 
-.nav__list {
+/* .nav__list {
    display: flex;
 }
 .nav__link {
@@ -107,9 +106,9 @@ img {
 .nav__link:hover,
 .nav__link:focus {
    background-color: var(--purple-color);
-}
+} */
 /* Hero section */
-.hero {
+/* .hero {
    padding-top: 158px;
    padding-right: 40px;
 
@@ -148,9 +147,9 @@ img {
 .hero__description {
    width: 738px;
    font-size: 18px;
-}
+} */
 /* Companies */
-.companies {
+/* .companies {
    background-color: var(--main-dark);
 }
 .companies__container {
@@ -209,9 +208,9 @@ img {
    width: 368px;
 
    color: var(--main-gray);
-}
+} */
 /* values section */
-.values {
+/* .values {
    background-color: var(--yellow-color);
 }
 .values__container {
@@ -250,8 +249,8 @@ img {
 }
 .values__img {
    background-color: var(--yellow-color);
-}
-.link--underline::after {
+} */
+/* .link--underline::after {
    position: absolute;
    content: '';
    bottom: 0;
@@ -260,9 +259,9 @@ img {
    height: 1px;
 
    background-color: var(--main-gray);
-}
+} */
 /* skills */
-.skills {
+/* .skills {
    padding: 120px 72px;
 
    background-color: var(--main-dark);
@@ -307,9 +306,9 @@ img {
 .skills__description {
    width: 368px;
    color: var(--main-gray);
-}
+} */
 /* Brands */
-.brands {
+/* .brands {
    background-color: var(--main-dark);
 }
 .brands__container {
@@ -325,7 +324,6 @@ img {
    justify-content: center;
    align-items: center;
 
-   /* width: 340px; */
    height: 140px;
    background-color: transparent;
 }
@@ -338,16 +336,16 @@ img {
 }
 .slick-next:before {
    content: '';
-}
+} */
 /* Works */
-.works {
+/* .works {
    background-color: var(--main-dark);
 }
 .works__container {
    padding: 120px 72px;
-}
+} */
 /* grid */
-.grid__container {
+/* .grid__container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(5, 1fr);
@@ -406,8 +404,8 @@ img {
    font-size: 18px;
 
    color: #8491a0;
-}
-.button {
+} */
+/* .button {
    font-weight: 700;
    font-size: 18px;
 
@@ -420,21 +418,21 @@ img {
    background-color: transparent;
 
    transition: background-color 250ms linear;
-}
-.grid__button {
+} */
+/* .grid__button {
    padding: 24px 32px;
    margin-top: 91px;
    margin-left: 200px;
-}
-.button:hover,
+} */
+/* .button:hover,
 .button:focus {
    background-color: var(--purple-color);
-}
+} */
 /* Instagram */
 /* Values = Instagram */
 
 /* Dribble */
-.dribble {
+/* .dribble {
    padding-top: 120px;
    padding-bottom: 120px;
    background-color: var(--main-dark);
@@ -464,7 +462,7 @@ img {
 }
 .dribble__link {
    color: var(--main-white);
-}
+} */
 /* Review section */
 .reviews {
    background-color: var(--main-dark);
@@ -689,11 +687,9 @@ img {
 
    padding: 80px 182px 80px 72px;
 }
-.logo {
-}
-.footer__logo {
+/* .footer__logo {
    margin-bottom: 32px;
-}
+} */
 .footer__left-part {
    margin-right: auto;
 }

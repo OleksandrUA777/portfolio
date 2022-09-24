@@ -1,0 +1,70 @@
+/**
+  |============================
+  | Grid
+  |============================
+*/
+.grid__container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   grid-column-gap: 24px;
+   grid-row-gap: 24px;
+}
+
+.grid__header-text {
+   grid-area: 1 / 1 / 2 / 2;
+}
+.grid__div1 {
+   grid-area: 1 / 2 / 3 / 3;
+}
+.grid__div2 {
+   grid-area: 2 / 1 / 4 / 2;
+}
+.grid__div3 {
+   grid-area: 3 / 2 / 5 / 3;
+}
+.grid__div4 {
+   grid-area: 4 / 1 / 6 / 2;
+}
+.grid__div5 {
+   grid-area: 5 / 2 / 7 / 3;
+}
+.grid-header-text__title {
+   font-weight: 700;
+   font-size: 16px;
+
+   color: var(--main-gray);
+}
+.grid-header-text__description {
+   width: 572px;
+   font-weight: 700;
+   font-size: 55px;
+   line-height: calc(66 / 55);
+
+   margin-bottom: 80px;
+}
+
+.grid__wrapper {
+   width: 636px;
+   padding: 40px 32px;
+
+   background-color: var(--light-dark);
+}
+.grid__header {
+   font-weight: 700;
+   font-size: 24px;
+
+   margin-bottom: 13px;
+}
+
+.grid__paragraph {
+   width: 572px;
+   font-size: 18px;
+
+   color: #8491a0;
+}
+.grid__button {
+   padding: 24px 32px;
+   margin-top: 91px;
+   margin-left: 200px;
+}

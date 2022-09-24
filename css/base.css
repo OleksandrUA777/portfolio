@@ -1,0 +1,12 @@
+/**
+  |============================
+  | Base
+  |============================
+*/
+body {
+  font-family: "Sen";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-white);
+}/*# sourceMappingURL=base.css.map */
