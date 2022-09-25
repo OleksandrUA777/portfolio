@@ -28,11 +28,8 @@
 }
 .hero__title {
    width: 738px;
-   font-weight: 700;
-   font-size: 78px;
-   line-height: calc(94 / 78);
-
    margin-bottom: 32px;
+   @include fonts(700, 78px, 94px);
 
    color: #ffffff;
 }
@@ -42,5 +39,6 @@
 }
 .hero__description {
    width: 738px;
+
    font-size: 18px;
 }

@@ -9,9 +9,12 @@
    justify-content: center;
 }
 .nav__list {
+   @extend %list;
    display: flex;
 }
 .nav__link {
+   @extend %link;
+
    display: inline-block;
    padding-top: 32px;
    padding-bottom: 32px;

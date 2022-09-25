@@ -4,8 +4,8 @@
   |============================
 */
 .button {
-   font-weight: 700;
-   font-size: 18px;
+   @include weight;
+   @include font-size;
 
    text-transform: uppercase;
    text-align: center;

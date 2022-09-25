@@ -13,9 +13,7 @@
    }
 
    &__title {
-      font-weight: 700;
-      font-size: 55px;
-      line-height: calc(66 / 55);
+      @include fonts;
 
       margin-bottom: 24px;
 
@@ -34,13 +32,11 @@
 
    &-field__label {
       display: block;
-
       margin-bottom: 40px;
    }
 
    &-field__title {
       display: block;
-
       margin-bottom: 8px;
    }
 
@@ -53,7 +49,6 @@
    &-field__comment {
       width: 526px;
       height: 100px;
-
       margin-bottom: 40px;
 
       resize: none;
@@ -65,8 +60,9 @@
    }
 }
 .input {
-   font-size: 22px;
    padding: 15px;
+
+   @include font-size(22px);
 
    outline: transparent;
    border: transparent;

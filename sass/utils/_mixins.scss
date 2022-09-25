@@ -1,0 +1,13 @@
+@import 'decimals';
+
+@mixin fonts($fw: 700, $fs: 55px, $lh: 66px) {
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: decimal-round($lh / $fs);
+}
+@mixin weight($fw: 700) {
+   font-weight: $fw;
+}
+@mixin font-size($fs: 18px) {
+   font-size: $fs;
+}

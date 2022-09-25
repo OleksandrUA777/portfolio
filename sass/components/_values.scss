@@ -15,9 +15,7 @@
    width: 50%;
 }
 .values__header {
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
+   @include fonts;
 
    margin-bottom: 24px;
 
@@ -26,7 +24,7 @@
 .values__description {
    width: 576px;
 
-   font-size: 18px;
+   @include font-size;
 
    margin-bottom: 134px;
 

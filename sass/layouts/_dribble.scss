@@ -18,15 +18,14 @@
    margin-bottom: 120px;
 }
 .dribble__title {
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
+   @include fonts;
 
    margin-bottom: 24px;
 }
 .dribble__description {
    width: 636px;
-   font-size: 18px;
+
+   @include font-size;
 
    margin-bottom: 40px;
 

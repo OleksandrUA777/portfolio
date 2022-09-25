@@ -11,15 +11,12 @@
    padding: 120px 72px;
 }
 .photos__title {
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
+   @include fonts;
 
    margin-bottom: 24px;
 }
 .photos__description {
    width: 551px;
-
    margin-bottom: 64px;
 
    color: var(--main-gray);
@@ -28,6 +25,7 @@
    margin-bottom: 40px;
 }
 .tabs__button {
+   @extend %link;
    display: inline-block;
    padding: 12px 16px;
 }
@@ -38,6 +36,8 @@
    background-color: var(--purple-color);
 }
 .photos__list {
+   @extend %list;
+
    display: flex;
    align-items: center;
    justify-content: center;

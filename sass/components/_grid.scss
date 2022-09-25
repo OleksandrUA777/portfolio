@@ -30,18 +30,16 @@
    grid-area: 5 / 2 / 7 / 3;
 }
 .grid-header-text__title {
-   font-weight: 700;
-   font-size: 16px;
+   @include weight;
+   @include font-size(16px);
 
    color: var(--main-gray);
 }
 .grid-header-text__description {
    width: 572px;
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
-
    margin-bottom: 80px;
+
+   @include fonts;
 }
 
 .grid__wrapper {
@@ -51,15 +49,15 @@
    background-color: var(--light-dark);
 }
 .grid__header {
-   font-weight: 700;
-   font-size: 24px;
+   @include weight;
+   @include font-size(24px);
 
    margin-bottom: 13px;
 }
 
 .grid__paragraph {
    width: 572px;
-   font-size: 18px;
+   @include font-size;
 
    color: #8491a0;
 }

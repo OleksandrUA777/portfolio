@@ -14,21 +14,17 @@
 }
 .reviews__title {
    width: 588px;
-
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
-
    margin-bottom: 24px;
+
+   @include fonts;
 
    color: var(--main-white);
 }
 .reviews__description {
    width: 588px;
-
-   font-size: 18px;
-
    margin-bottom: 40px;
+
+   @include font-size;
 
    color: var(--main-gray);
 }
@@ -36,6 +32,7 @@
    color: var(--main-white);
 }
 .reviews__list {
+   @extend %list;
 }
 .reviews__item {
 }
@@ -44,30 +41,26 @@
 }
 .reviews__list__wrapper {
    width: 636px;
-
    padding: 64px;
 
    border: 1px solid #5b6876;
 }
 .reviews__comment {
    width: 508px;
-
-   font-weight: 700;
-   font-size: 24px;
-
    margin-bottom: 64px;
+
+   @include fonts(700, 24px, 36px);
 }
 .reviews__name {
-   font-weight: 700;
-   font-size: 18px;
-
    margin-bottom: 4px;
+
+   @include weight;
+   @include font-size;
 
    color: #5b6876;
 }
 .reviews__company {
-   font-weight: 700;
-   font-size: 18px;
-
+   @include weight;
+   @include font-size;
    color: #5b6876;
 }

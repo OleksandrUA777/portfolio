@@ -16,19 +16,19 @@
    margin-right: 24px;
 }
 .skills-header__title {
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
+   @include fonts;
 
    margin-bottom: 24px;
 }
 .skills-header__description {
    width: 368px;
-   font-size: 18px;
+   @include font-size;
 
    color: var(--main-gray);
 }
 .skills__list {
+   @extend %list;
+
    display: flex;
    flex-wrap: wrap;
    align-items: center;

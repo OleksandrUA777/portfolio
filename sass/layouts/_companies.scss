@@ -14,7 +14,7 @@
    padding-left: 72px;
 }
 .companies__title {
-   font-weight: 700;
+   @include weight;
 
    text-transform: uppercase;
 
@@ -24,14 +24,12 @@
 }
 .companies__header {
    width: 690px;
-
-   font-weight: 700;
-   font-size: 55px;
-   line-height: calc(66 / 55);
+   @include fonts;
 
    margin-bottom: 40px;
 }
 .companies__list {
+   @extend %list;
    display: flex;
    align-items: center;
    gap: 24px;
