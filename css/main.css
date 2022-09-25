@@ -280,7 +280,6 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  outline: 2px solid yellow;
 }
 
 .header__container {
@@ -333,8 +332,8 @@ body {
 .hero {
   padding-top: 158px;
   padding-right: 40px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(38%, var(--main-dark)), color-stop(38%, #181823));
-  background: linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
+  background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"), -webkit-gradient(linear, left top, right top, color-stop(38%, var(--main-dark)), color-stop(38%, #181823));
+  background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"), linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
 }
 
 .hero__container {
