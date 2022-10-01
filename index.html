@@ -11,6 +11,7 @@
 
       <title>Robin.W</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Sen:regular,700" rel="stylesheet" />
       <link
          rel="stylesheet"
@@ -50,17 +51,44 @@
                   </li>
                </ul>
             </nav>
+            <button
+               class="menu__button js-open-menu"
+               aria-expanded="false"
+               aria-controls="mobile-menu"
+               aria-label="three stripes to open mobile menu"
+            >
+               <svg width="20" height="13" class="menu__icon">
+                  <use href="./img/icons.svg#menu"></use>
+               </svg>
+            </button>
          </div>
       </header>
       <!-- Hero -->
       <section class="section hero">
          <div class="container hero__container">
             <div class="hero__wrapper">
-               <img
-                  src="./img/hero/hero.png"
-                  alt="photo of Robin.W "
-                  class="hero__img animate__animated animate__backInLeft animate__slower"
-               />
+               <!-- Desktop -->
+               <picture>
+                  <source
+                     media="(min-width:1200px)"
+                     srcset="./img/hero/hero_lg-@1x.jpg, ./img/hero/hero_lg-@2x.jpg 2x"
+                  />
+                  <!-- Tablet -->
+                  <source
+                     media="(min-width:768px)"
+                     srcset="./img/hero/hero_md-@1x.jpg, ./img/hero/hero_md-@2x.jpg 2x"
+                  />
+                  <!-- Mobile -->
+                  <source
+                     media="(max-width:767px)"
+                     srcset="./img/hero/hero_sm-@1x.jpg, ./img/hero/hero_sm-@2x.jpg 2x"
+                  />
+                  <img
+                     src="./img/hero/hero_sm-@1x.jpg"
+                     alt="photo of Robin.W "
+                     class="hero__img animate__animated animate__backInLeft animate__slower"
+                  />
+               </picture>
                <div class="hero__text-wrapper">
                   <h1 class="hero__title animate__animated animate__backInRight animate__fast animate__delay-2s">
                      I’m Robin Williams. A Product Designer
@@ -75,7 +103,7 @@
          </div>
       </section>
 
-      <!-- Companies -->
+      <!-- Companies
       <section class="section companies">
          <div class="container companies__container">
             <p class="companies__title" data-aos="fade-right" data-aos-duration="1000">work experience</p>
@@ -125,9 +153,9 @@
                </li>
             </ul>
          </div>
-      </section>
+      </section> -->
       <!-- Values -->
-      <section class="section values">
+      <!-- <section class="section values">
          <div class="container values__container">
             <div class="values__wrapper">
                <h2 class="values__header" data-aos="fade-right" data-aos-duration="1000">Philosophy & values</h2>
@@ -146,9 +174,9 @@
                class="values__img"
             />
          </div>
-      </section>
+       </section>  -->
       <!-- Skills -->
-      <section class="section skills">
+      <!-- <section class="section skills">
          <div class="container skills__container">
             <div class="skills__text-wrapper">
                <h2 class="skills-header__title" data-aos="fade-right" data-aos-duration="1000">Skillset</h2>
@@ -200,9 +228,9 @@
                </li>
             </ul>
          </div>
-      </section>
+      </section> -->
       <!-- Brands -->
-      <section class="section brands">
+      <!-- <section class="section brands">
          <div class="container brands__container">
             <h2 class="visually-hidden">Brands</h2>
             <div class="multiple-items brands__slider">
@@ -264,9 +292,9 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- Works -->
-      <section class="section works">
+      <!-- <section class="section works">
          <div class="container works__container">
             <div class="grid__container">
                <div class="grid__header-text">
@@ -325,9 +353,9 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- Instagram -->
-      <section class="section values">
+      <!-- <section class="section values">
          <div class="container values__container">
             <div class="values__wrapper">
                <h2 class="values__header" data-aos="fade-right" data-aos-duration="1000">Instagram</h2>
@@ -345,9 +373,9 @@
                class="values__img"
             />
          </div>
-      </section>
+      </section> -->
       <!-- Dribble -->
-      <section class="section dribble">
+      <!-- <section class="section dribble">
          <div class="container dribble__container">
             <div class="dribble__wrapper">
                <h2 class="dribble__title" data-aos="fade-right" data-aos-duration="1000">Dribbble</h2>
@@ -369,9 +397,9 @@
                data-aos-duration="1000"
             />
          </div>
-      </section>
+      </section> -->
       <!-- Reviews -->
-      <section class="section reviews">
+      <!-- <section class="section reviews">
          <div class="container reviews__container">
             <div class="reviews__wrapper">
                <h2 class="reviews__title">This is what people say about me</h2>
@@ -437,9 +465,9 @@
                </li>
             </ul>
          </div>
-      </section>
+      </section> -->
       <!-- Photos -->
-      <section class="section photos">
+      <!-- <section class="section photos">
          <div class="container photos__container">
             <h2 class="photos__title">Photography</h2>
             <p class="photos__description">
@@ -465,7 +493,7 @@
                   <img src="./img/photos/img-4.png" alt="" width="306" height="420" class="photos__img" />
                </li>
             </ul>
-            <!-- <div class="photos-tabs">
+             <div class="photos-tabs">
 <div id="tab_01" class="list photos-list">
 <img src="./img/photos/img-1.png" alt="" width="306" height="420" class="photos__img">
 <img src="./img/photos/img-2.png" alt="" width="306" height="420" class="photos__img">
@@ -491,10 +519,10 @@
 <img src="./img/photos/australia/img-4.jpg" alt="" width="306" height="420" class="photos__img">
 </div>
 </div> -->
-         </div>
-      </section>
+      <!-- </div>
+      </section>  -->
       <!-- Form -->
-      <section class="section form">
+      <!-- <section class="section form">
          <div class="container form__container">
             <div class="form__wrapper">
                <h2 class="form__title" data-aos="fade-right" data-aos-duration="1000">Let’s get started</h2>
@@ -520,9 +548,9 @@
                <button class="button form__button" type="submit">Let’s get started</button>
             </div>
          </div>
-      </section>
+      </section> -->
       <!-- Footer -->
-      <footer class="section footer">
+      <!-- <footer class="section footer">
          <div class="container footer__container">
             <div class="footer__left-part">
                <a href="./index.html" class="logo footer__logo">
@@ -572,7 +600,7 @@
                </ul>
             </div>
          </div>
-      </footer>
+      </footer> -->
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

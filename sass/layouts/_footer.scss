@@ -7,6 +7,7 @@
    background-color: var(--light-dark);
 }
 .footer__container {
+   @include container(80px, 182px, 80px, 72px);
    display: flex;
 
    padding: 80px 182px 80px 72px;

@@ -5,13 +5,10 @@
 */
 
 .companies {
+   @include section(120px, 120px);
    background-color: var(--main-dark);
 }
 .companies__container {
-   padding-top: 120px;
-   padding-bottom: 120px;
-   padding-right: 72px;
-   padding-left: 72px;
 }
 .companies__title {
    @include weight;

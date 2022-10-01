@@ -4,8 +4,8 @@
   |============================
 */
 .reviews {
+   @include section(120px, 120px);
    background-color: var(--main-dark);
-   padding: 120px 72px;
 }
 .reviews__container {
    display: flex;

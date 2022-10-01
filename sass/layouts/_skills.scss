@@ -4,8 +4,7 @@
   |============================
 */
 .skills {
-   padding: 120px 72px;
-
+   @include section(120px, 120px);
    background-color: var(--main-dark);
 }
 .skills__container {

@@ -4,12 +4,15 @@
   |============================
 */
 .form {
+   @include section(120px, 120px);
    background-color: var(--main-dark);
 
    &__container {
+      padding-right: 182px;
+      padding-left: 182px;
+
       display: flex;
       gap: 29px;
-      padding: 120px 182px;
    }
 
    &__title {

@@ -4,41 +4,87 @@
   |============================
 */
 .hero {
-   padding-top: 158px;
-   padding-right: 40px;
+   background-color: var(--main-dark);
 
-   background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"),
-      linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
+   @media screen and (min-width: 768px) {
+      @include section(80px, 82px);
+   }
+   @media screen and (min-width: 1200px) {
+      @include section(158px, 82px);
+      background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"),
+         linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
+   }
 }
 .hero__container {
+   padding-right: 0;
+   padding-left: 0;
+   padding-top: 0;
+   padding-bottom: 0;
    // border-bottom: 7px dashed grey;
-   padding-bottom: 82px;
+
+   @media screen and (min-width: 768px) {
+      padding-right: 40px;
+   }
 }
 .hero__img {
-   width: 750px;
-   height: 650px;
 }
 .hero__text-wrapper {
-   position: absolute;
-   left: 702px;
-   top: 299px;
+   padding-top: 48px;
+   padding-bottom: 48px;
+   padding-right: 20px;
+   padding-left: 20px;
+
+   @media screen and (min-width: 768px) {
+      position: absolute;
+      left: 319px;
+      top: 271px;
+      padding: 0;
+   }
+
+   @media screen and (min-width: 1200px) {
+      position: absolute;
+      left: 702px;
+      top: 238px;
+   }
 }
 .animate__backInRight {
    --animate-duration: 2s;
 }
 .hero__title {
-   width: 738px;
-   margin-bottom: 32px;
-   @include fonts(700, 78px, 94px);
+   display: inline-block;
+   width: 320px;
+   margin-bottom: 16px;
+
+   @include fonts(700, 32px, 38px);
 
    color: #ffffff;
+
+   @media screen and (min-width: 768px) {
+      // Width на макеті не правильний, не можливо так поставити текст
+      width: 408px;
+      margin-bottom: 32px;
+      @include fonts(700, 56px, 67px);
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 738px;
+
+      @include fonts(700, 78px, 94px);
+   }
 }
 
 .hero__grey {
    color: rgba(255, 255, 255, 0.5);
 }
 .hero__description {
-   width: 738px;
-
+   width: 320px;
    font-size: 18px;
+
+   @media screen and (min-width: 768px) {
+      width: 408px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 738px;
+   }
 }

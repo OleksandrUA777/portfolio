@@ -1,0 +1,27 @@
+.menu__button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 40px;
+   height: 40px;
+   padding: 0;
+   margin-left: auto;
+
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+
+   transition: fill 250ms var(--main-transition);
+   &:hover,
+   &:focus {
+      fill: var(--main-accent);
+   }
+
+   @media screen and (min-width: 768px) {
+      display: none;
+   }
+}
+.menu__icon {
+   fill: #c4c4c4;
+}

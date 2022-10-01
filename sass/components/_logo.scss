@@ -8,6 +8,11 @@
 }
 .nav__logo {
    margin-right: auto;
+
+   @media screen and (max-width: 767px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+   }
 }
 .footer__logo {
    margin-bottom: 32px;

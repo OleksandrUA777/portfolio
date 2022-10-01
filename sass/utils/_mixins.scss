@@ -11,3 +11,13 @@
 @mixin font-size($fs: 18px) {
    font-size: $fs;
 }
+@mixin container($pt: 120px, $pr: 72px, $pb: 120px, $pl: 72px) {
+   padding-top: $pt;
+   padding-right: $pr;
+   padding-bottom: $pb;
+   padding-left: $pl;
+}
+@mixin section($pt: 120px, $pb: 120px) {
+   padding-top: $pt;
+   padding-bottom: $pb;
+}
