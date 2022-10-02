@@ -428,14 +428,6 @@ body {
     padding-bottom: 82px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 158px;
-    padding-bottom: 82px;
-    background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"), -webkit-gradient(linear, left top, right top, color-stop(38%, var(--main-dark)), color-stop(38%, #181823));
-    background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"), linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
-  }
-}
 
 .hero__container {
   padding-right: 0;
@@ -458,8 +450,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero__text-wrapper {
     position: absolute;
-    left: 319px;
-    top: 271px;
+    margin-left: 319px;
+    margin-top: -576px;
     padding: 0;
   }
 }
@@ -468,6 +460,8 @@ body {
     position: absolute;
     left: 702px;
     top: 238px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
 
@@ -527,9 +521,21 @@ body {
   |============================
 */
 .companies {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--main-dark);
+}
+@media screen and (min-width: 768px) {
+  .companies {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .companies__title {
@@ -540,35 +546,96 @@ body {
 }
 
 .companies__header {
-  width: 690px;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
+  width: 320px;
   margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+}
+@media screen and (min-width: 768px) {
+  .companies__header {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    width: 688px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__header {
+    width: 690px;
+  }
 }
 
 .companies__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 24px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .companies__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 24px;
+  }
+}
+.companies__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .companies__item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__item {
+    width: auto;
+  }
 }
 
 .companies__icon {
   fill: var(--main-gray);
 }
 
-.companies__wrapper {
-  padding-right: 48px;
+@media screen and (min-width: 768px) {
+  .companies__wrapper {
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__wrapper {
+    padding-right: 77px;
+  }
 }
 
 .companies__job {
   font-weight: 700;
   font-size: 24px;
-  margin-bottom: 22px;
+  width: 312px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .companies__job {
+    width: 197px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__job {
+    width: auto;
+  }
 }
 
 .companies__span--green {
@@ -582,8 +649,18 @@ body {
 }
 
 .companies__description {
-  width: 368px;
   color: var(--main-gray);
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .companies__description {
+    width: 197px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .companies__description {
+    width: 368px;
+  }
 }
 
 /**

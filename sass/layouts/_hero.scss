@@ -9,19 +9,17 @@
    @media screen and (min-width: 768px) {
       @include section(80px, 82px);
    }
-   @media screen and (min-width: 1200px) {
-      @include section(158px, 82px);
-      background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"),
-         linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
-   }
+   // @media screen and (min-width: 1200px) {
+   //    @include section(158px, 82px);
+   //    background: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23969191FF' stroke-width='4' stroke-dasharray='19%2c 18' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"),
+   //       linear-gradient(to right, var(--main-dark) 38%, #181823 38%);
+   // }
 }
 .hero__container {
    padding-right: 0;
    padding-left: 0;
    padding-top: 0;
    padding-bottom: 0;
-   // border-bottom: 7px dashed grey;
-
    @media screen and (min-width: 768px) {
       padding-right: 40px;
    }
@@ -36,8 +34,11 @@
 
    @media screen and (min-width: 768px) {
       position: absolute;
-      left: 319px;
-      top: 271px;
+      // Костиль!!
+      margin-left: 319px;
+      margin-top: -576px;
+      // left: 319px;
+      // top: 271px;
       padding: 0;
    }
 
@@ -45,6 +46,8 @@
       position: absolute;
       left: 702px;
       top: 238px;
+      margin-left: 0;
+      margin-top: 0;
    }
 }
 .animate__backInRight {

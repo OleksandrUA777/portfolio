@@ -5,8 +5,15 @@
 */
 
 .companies {
-   @include section(120px, 120px);
+   @include section(48px, 48px);
    background-color: var(--main-dark);
+
+   @media screen and (min-width: 768px) {
+      @include section(80px, 80px);
+   }
+   @media screen and (min-width: 1200px) {
+      @include section(120px, 120px);
+   }
 }
 .companies__container {
 }
@@ -20,28 +27,69 @@
    color: var(--main-gray);
 }
 .companies__header {
-   width: 690px;
-   @include fonts;
-
+   width: 320px;
    margin-bottom: 40px;
+
+   @include fonts(700, 32px, 38px);
+
+   @media screen and (min-width: 768px) {
+      @include fonts;
+      width: 688px;
+   }
+   @media screen and (min-width: 1200px) {
+      width: 690px;
+   }
 }
 .companies__list {
    @extend %list;
    display: flex;
-   align-items: center;
-   gap: 24px;
+   align-items: baseline;
+   gap: 40px;
+   flex-direction: column;
+   justify-content: center;
+
+   @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 24px;
+   }
+   @media screen and (min-width: 1200px) {
+   }
+}
+.companies__item {
+   width: 100%;
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 48px) / 3);
+   }
+   @media screen and (min-width: 1200px) {
+      width: auto;
+   }
 }
 .companies__icon {
    fill: var(--main-gray);
 }
 .companies__wrapper {
-   padding-right: 48px;
+   @media screen and (min-width: 768px) {
+      padding-right: 15px;
+   }
+   @media screen and (min-width: 1200px) {
+      padding-right: 77px;
+   }
 }
 .companies__job {
    font-weight: 700;
    font-size: 24px;
+   // Підібрав сам, макет - не правильний
+   width: 312px;
+   margin-bottom: 16px;
 
-   margin-bottom: 22px;
+   @media screen and (min-width: 768px) {
+      width: 197px;
+      margin-bottom: 24px;
+   }
+   @media screen and (min-width: 1200px) {
+      width: auto;
+   }
 }
 .companies__span {
    &--green {
@@ -56,7 +104,13 @@
 }
 
 .companies__description {
-   width: 368px;
-
    color: var(--main-gray);
+   width: 320px;
+
+   @media screen and (min-width: 768px) {
+      width: 197px;
+   }
+   @media screen and (min-width: 1200px) {
+      width: 368px;
+   }
 }
