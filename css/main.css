@@ -546,7 +546,6 @@ body {
 }
 
 .companies__header {
-  width: 320px;
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 32px;
@@ -591,9 +590,6 @@ body {
     gap: 24px;
   }
 }
-.companies__item {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .companies__item {
     width: calc((100% - 48px) / 3);
@@ -623,7 +619,6 @@ body {
 .companies__job {
   font-weight: 700;
   font-size: 24px;
-  width: 312px;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
@@ -650,7 +645,6 @@ body {
 
 .companies__description {
   color: var(--main-gray);
-  width: 320px;
 }
 @media screen and (min-width: 768px) {
   .companies__description {
