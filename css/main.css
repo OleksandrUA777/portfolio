@@ -818,13 +818,24 @@ body {
 }
 
 .brands-slider__item {
-  width: 349px !important;
+  width: 180px !important;
+  height: 140px;
   border: 1px solid var(--light-dark);
   -webkit-transition: background-color 250ms linear;
   transition: background-color 250ms linear;
 }
 .brands-slider__item:hover, .brands-slider__item:focus {
   background-color: var(--purple-color);
+}
+@media screen and (min-width: 768px) {
+  .brands-slider__item {
+    width: 384px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .brands-slider__item {
+    width: 340px !important;
+  }
 }
 
 .brands-slider__link {

@@ -11,7 +11,8 @@
    padding-right: 0;
 }
 .brands-slider__item {
-   width: 349px !important;
+   width: 180px !important;
+   height: 140px;
    border: 1px solid var(--light-dark);
 
    transition: background-color 250ms linear;
@@ -19,6 +20,13 @@
    &:hover,
    &:focus {
       background-color: var(--purple-color);
+   }
+
+   @media screen and (min-width: 768px) {
+      width: 384px !important;
+   }
+   @media screen and (min-width: 1440px) {
+      width: 340px !important;
    }
 }
 .brands-slider__link {
