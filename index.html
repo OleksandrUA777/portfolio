@@ -13,10 +13,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Sen:regular,700" rel="stylesheet" />
-      <!-- <link
+      <link
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      /> -->
+      />
       <!-- Animation -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       <!-- AOS animation -->
@@ -70,7 +70,7 @@
                <!-- Desktop -->
                <picture>
                   <source
-                     media="(min-width:1200px)"
+                     media="(min-width: 1440px)"
                      srcset="./img/hero/hero_lg-@1x.jpg, ./img/hero/hero_lg-@2x.jpg 2x"
                   />
                   <!-- Tablet -->
@@ -124,7 +124,7 @@
                      </p>
                   </div>
                </li>
-               <!-- <li class="companies__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+               <li class="companies__item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
                   <svg width="126" height="141">
                      <use href="./img/icons.svg#number-2" class="companies__icon"></use>
                   </svg>
@@ -150,12 +150,12 @@
                         platform.
                      </p>
                   </div>
-               </li> -->
+               </li>
             </ul>
          </div>
       </section>
       <!-- Values -->
-      <!-- <section class="section values">
+      <section class="section values">
          <div class="container values__container">
             <div class="values__wrapper">
                <h2 class="values__header" data-aos="fade-right" data-aos-duration="1000">Philosophy & values</h2>
@@ -166,17 +166,35 @@
                </p>
                <a href="" class="link link--underline" data-aos="zoom-in" data-aos-duration="1200">More about me</a>
             </div>
-            <img
-               src="./img/values/values-img.jpg"
-               alt="transparent ball in the hand of the man"
-               width="720"
-               height="600"
-               class="values__img"
-            />
+
+            <!-- Desktop -->
+            <picture>
+               <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/values/img1_lg-@1x.jpg, ./img/values/img1_lg-@2x.jpg 2x"
+               />
+               <!-- Tablet -->
+               <source
+                  media="(min-width:768px)"
+                  srcset="./img/values/img1_md-@1x.jpg, ./img/values/img1_md-@2x.jpg 2x"
+               />
+               <!-- Mobile -->
+               <source
+                  media="(max-width:767px)"
+                  srcset="./img/values/img1_sm-@1x.jpg, ./img/values/img1_sm-@2x.jpg 2x"
+               />
+               <img
+                  src="./img/values/img1_sm-@1x.jpg"
+                  alt="transparent ball in the hand of the man"
+                  width="720"
+                  height="600"
+                  class="values__img"
+               />
+            </picture>
          </div>
-       </section>  -->
+      </section>
       <!-- Skills -->
-      <!-- <section class="section skills">
+      <section class="section skills">
          <div class="container skills__container">
             <div class="skills__text-wrapper">
                <h2 class="skills-header__title" data-aos="fade-right" data-aos-duration="1000">Skillset</h2>
@@ -228,14 +246,21 @@
                </li>
             </ul>
          </div>
-      </section> -->
+      </section>
       <!-- Brands -->
-      <!-- <section class="section brands">
+      <section class="section brands">
          <div class="container brands__container">
             <h2 class="visually-hidden">Brands</h2>
             <div class="multiple-items brands__slider">
                <div class="brands-slider__item">
                   <a href="" class="brands-slider__link">
+                     <svg width="71" height="29" class="brands-slider__icon">
+                        <use href="./img/icons.svg#brand-1"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="brands-slider__item">
+                  <a href="" class="brands-slider__link">
                      <svg width="85" height="21" class="brands-slider__icon">
                         <use href="./img/icons.svg#brand-1"></use>
                      </svg>
@@ -264,35 +289,28 @@
                </div>
                <div class="brands-slider__item">
                   <a href="" class="brands-slider__link">
-                     <svg width="85" height="21" class="brands-slider__icon">
-                        <use href="./img/icons.svg#brand-1"></use>
+                     <svg width="154" height="25" class="brands-slider__icon">
+                        <use href="./img/icons.svg#brand-5"></use>
                      </svg>
                   </a>
                </div>
                <div class="brands-slider__item">
                   <a href="" class="brands-slider__link">
-                     <svg width="71" height="29" class="brands-slider__icon">
-                        <use href="./img/icons.svg#brand-2"></use>
-                     </svg>
-                  </a>
-               </div>
-               <div class="brands-slider__item">
-                  <a href="" class="brands-slider__link">
-                     <svg width="28" height="28" class="brands-slider__icon">
-                        <use href="./img/icons.svg#brand-3"></use>
+                     <svg width="41" height="21" class="brands-slider__icon">
+                        <use href="./img/icons.svg#brand-6"></use>
                      </svg>
                   </a>
                </div>
                <div class="brands-slider__item">
                   <a href="" class="brands-slider__link">
                      <svg width="21" height="21" class="brands-slider__icon">
-                        <use href="./img/icons.svg#brand-4"></use>
+                        <use href="./img/icons.svg#brand-3"></use>
                      </svg>
                   </a>
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
       <!-- Works -->
       <!-- <section class="section works">
          <div class="container works__container">

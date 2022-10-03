@@ -11,7 +11,7 @@
    @media screen and (min-width: 768px) {
       @include section(80px, 80px);
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       @include section(120px, 120px);
    }
 }
@@ -35,7 +35,7 @@
       @include fonts;
       width: 688px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       width: 690px;
    }
 }
@@ -51,15 +51,12 @@
       flex-direction: row;
       gap: 24px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
    }
 }
 .companies__item {
    @media screen and (min-width: 768px) {
       width: calc((100% - 48px) / 3);
-   }
-   @media screen and (min-width: 1200px) {
-      width: auto;
    }
 }
 .companies__icon {
@@ -69,23 +66,22 @@
    @media screen and (min-width: 768px) {
       padding-right: 15px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       padding-right: 77px;
    }
 }
 .companies__job {
    font-weight: 700;
    font-size: 24px;
-   // Підібрав сам, макет - не правильний
-   // width: 312px;
    margin-bottom: 16px;
 
    @media screen and (min-width: 768px) {
-      width: 197px;
+      // width: 197px;
       margin-bottom: 24px;
    }
-   @media screen and (min-width: 1200px) {
-      width: auto;
+   @media screen and (min-width: 1440px) {
+      // width: auto;
+      margin-bottom: 22px;
    }
 }
 .companies__span {
@@ -107,7 +103,7 @@
    @media screen and (min-width: 768px) {
       width: 197px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       width: 368px;
    }
 }
