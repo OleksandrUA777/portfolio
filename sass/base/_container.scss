@@ -20,13 +20,13 @@
    outline-offset: -2px;
 
    // tablet
-   @media screen and (min-width: 767px) {
+   @media screen and (min-width: 768px) {
       max-width: 768px;
       padding-right: 40px;
       padding-left: 40px;
    }
    // desktop
-   @media screen and (min-width: 1199px) {
+   @media screen and (min-width: 1200px) {
       max-width: 1440px;
       padding-right: 72px;
       padding-left: 72px;
