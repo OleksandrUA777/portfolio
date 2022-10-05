@@ -906,18 +906,52 @@ body {
   |============================
 */
 .dribble {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background-color: var(--main-dark);
+}
+@media screen and (min-width: 768px) {
+  .dribble {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dribble {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .dribble__container {
-  padding-right: 182px;
-  padding-left: 182px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .dribble__container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dribble__container {
+    padding-right: 182px;
+    padding-left: 182px;
+  }
 }
 
 .dribble__wrapper {
-  margin-bottom: 120px;
+  margin-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .dribble__wrapper {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .dribble__wrapper {
+    margin-bottom: 120px;
+  }
 }
 
 .dribble__title {
@@ -928,7 +962,6 @@ body {
 }
 
 .dribble__description {
-  width: 636px;
   font-size: 18px;
   margin-bottom: 40px;
   color: var(--main-gray);

@@ -5,16 +5,40 @@
 */
 
 .dribble {
-   @include section(120px, 120px);
+   @include section(64px, 64px);
+
    background-color: var(--main-dark);
+
+   @media screen and (min-width: 768px) {
+      @include section(80px, 80px);
+   }
+   @media screen and (min-width: 1440px) {
+      @include section(120px, 120px);
+   }
 }
 .dribble__container {
-   padding-right: 182px;
-   padding-left: 182px;
+   padding-right: 20px;
+   padding-left: 20px;
+
+   @media screen and (min-width: 768px) {
+      padding-right: 40px;
+      padding-left: 40px;
+   }
+   @media screen and (min-width: 1440px) {
+      padding-right: 182px;
+      padding-left: 182px;
+   }
 }
 
 .dribble__wrapper {
-   margin-bottom: 120px;
+   margin-bottom: 64px;
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 80px;
+   }
+   @media screen and (min-width: 1440px) {
+      margin-bottom: 120px;
+   }
 }
 .dribble__title {
    @include fonts;
@@ -22,8 +46,6 @@
    margin-bottom: 24px;
 }
 .dribble__description {
-   width: 636px;
-
    @include font-size;
 
    margin-bottom: 40px;
