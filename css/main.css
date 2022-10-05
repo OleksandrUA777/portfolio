@@ -977,32 +977,68 @@ body {
   |============================
 */
 .reviews {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--main-dark);
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .reviews__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 72px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px;
+}
+@media screen and (min-width: 768px) {
+  .reviews__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 23px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__container {
+    gap: 72px;
+  }
 }
 
 .reviews__title {
-  width: 588px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.19;
   color: var(--main-white);
+}
+@media screen and (min-width: 768px) {
+  .reviews__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
 }
 
 .reviews__description {
-  width: 588px;
   margin-bottom: 40px;
   font-size: 18px;
   color: var(--main-gray);
@@ -1013,21 +1049,45 @@ body {
 }
 
 .reviews__item:not(:last-child) {
-  margin-bottom: 120px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .reviews__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__item:not(:last-child) {
+    margin-bottom: 120px;
+  }
 }
 
 .reviews__list__wrapper {
-  width: 636px;
-  padding: 64px;
+  padding: 32px;
   border: 1px solid #5b6876;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__list__wrapper {
+    padding: 64px;
+  }
 }
 
 .reviews__comment {
-  width: 508px;
+  width: auto;
   margin-bottom: 64px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
+}
+@media screen and (min-width: 360px) {
+  .reviews__comment {
+    width: 269px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__comment {
+    width: 508px;
+  }
 }
 
 .reviews__name {
@@ -1049,35 +1109,75 @@ body {
   |============================
 */
 .photos {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--main-dark);
+}
+@media screen and (min-width: 768px) {
+  .photos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .photos__title {
   font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.19;
   margin-bottom: 24px;
 }
-
+@media screen and (min-width: 768px) {
+  .photos__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
 .photos__description {
-  width: 551px;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
   color: var(--main-gray);
+}
+@media screen and (min-width: 768px) {
+  .photos__description {
+    width: 624px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos__description {
+    width: 551px;
+  }
 }
 
 .tabs {
   margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
 }
 
 .tabs__button {
   display: inline-block;
   padding: 12px 16px;
+  width: 148px;
 }
-
-.tabs__button:not(:last-child) {
-  margin-right: 24px;
+@media screen and (min-width: 768px) {
+  .tabs__button {
+    width: auto;
+  }
 }
 
 .tabs__button--active {
@@ -1094,6 +1194,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -1103,31 +1205,88 @@ body {
   |============================
 */
 .form {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--main-dark);
 }
+@media screen and (min-width: 768px) {
+  .form {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .form__container {
-  padding-right: 182px;
-  padding-left: 182px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 29px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .form__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__container {
+    gap: 29px;
+    padding-right: 182px;
+    padding-left: 182px;
+  }
 }
 .form__title {
   font-weight: 700;
-  font-size: 55px;
-  line-height: 1.2;
-  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.19;
+  margin-bottom: 16px;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .form__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+}
 .form__description {
-  width: 526px;
+  width: 292px;
   color: var(--main-gray);
 }
+@media screen and (min-width: 768px) {
+  .form__description {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__description {
+    width: 522px;
+  }
+}
 .form__wrapper-field {
-  width: 526px;
+  width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .form__wrapper-field {
+    width: 332px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__wrapper-field {
+    width: 526px;
+  }
 }
 .form-field__label {
   display: block;
@@ -1143,10 +1302,20 @@ body {
   height: 50px;
 }
 .form-field__comment {
-  width: 526px;
+  width: 320px;
   height: 100px;
   margin-bottom: 40px;
   resize: none;
+}
+@media screen and (min-width: 768px) {
+  .form-field__comment {
+    width: 332px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-field__comment {
+    width: 526px;
+  }
 }
 .form__button {
   width: 100%;

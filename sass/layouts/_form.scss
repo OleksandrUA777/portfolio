@@ -4,33 +4,66 @@
   |============================
 */
 .form {
-   @include section(120px, 120px);
+   @include section(48px, 48px);
    background-color: var(--main-dark);
 
-   &__container {
-      padding-right: 182px;
-      padding-left: 182px;
+   @media screen and (min-width: 768px) {
+      @include section(80px, 80px);
+   }
+   @media screen and (min-width: 1200px) {
+      @include section(120px, 120px);
+   }
 
+   &__container {
       display: flex;
-      gap: 29px;
+      flex-direction: column;
+      gap: 24px;
+
+      @media screen and (min-width: 768px) {
+         flex-direction: row;
+      }
+
+      @media screen and (min-width: 1200px) {
+         gap: 29px;
+         padding-right: 182px;
+         padding-left: 182px;
+      }
    }
 
    &__title {
-      @include fonts;
-
-      margin-bottom: 24px;
+      @include fonts(700, 32px, 38px);
+      margin-bottom: 16px;
 
       color: #ffffff;
+      @media screen and (min-width: 768px) {
+         @include fonts;
+         margin-bottom: 24px;
+      }
+      @media screen and (min-width: 1200px) {
+      }
    }
 
    &__description {
-      width: 526px;
+      width: 292px;
 
       color: var(--main-gray);
+      @media screen and (min-width: 768px) {
+         width: 320px;
+      }
+      @media screen and (min-width: 1200px) {
+         width: 522px;
+      }
    }
 
    &__wrapper-field {
-      width: 526px;
+      width: 320px;
+
+      @media screen and (min-width: 768px) {
+         width: 332px;
+      }
+      @media screen and (min-width: 1200px) {
+         width: 526px;
+      }
    }
 
    &-field__label {
@@ -50,11 +83,18 @@
    }
 
    &-field__comment {
-      width: 526px;
+      width: 320px;
       height: 100px;
       margin-bottom: 40px;
 
       resize: none;
+
+      @media screen and (min-width: 768px) {
+         width: 332px;
+      }
+      @media screen and (min-width: 1200px) {
+         width: 526px;
+      }
    }
 
    &__button {
