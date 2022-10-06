@@ -937,8 +937,33 @@
                   </li>
                </ul>
             </div>
+
+            <div>
+               <p class="footer__copyright">Not Copyright 2020 • Robin Williams. O.K Webflow cloneable</p>
+            </div>
          </div>
       </footer>
+      <!-- Menu -->
+      <div class="menu__container js-menu-container" id="mobile-menu">
+         <button class="menu__button menu__button--close js-close-menu" aria-label="cross">
+            <svg class="menu__close">
+               <use href="./img/icons.svg#menu-cross"></use>
+            </svg>
+         </button>
+
+         <ul class="menu__nav">
+            <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студія</a></li>
+            <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+            <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
+         </ul>
+      </div>
+      <!-- Menu script -->
+      <script
+         defer
+         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+         crossorigin="anonymous"
+      ></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -947,5 +972,6 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="./js/animation.js"></script>
       <script src="./js/anim-2.js"></script>
+      <script defer src="./js/mobile-menu.js"></script>
    </body>
 </html>

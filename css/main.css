@@ -175,8 +175,70 @@ body {
   }
 }
 
-.menu__icon {
+.menu__icon,
+.menu__close {
   fill: #c4c4c4;
+}
+
+.menu__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: fill 250ms var(--main-transition);
+  transition: fill 250ms var(--main-transition);
+}
+.menu__button:hover, .menu__button:focus {
+  fill: var(--main-accent);
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+}
+
+.menu__button--close {
+  position: absolute;
+  top: 18px;
+  right: 38px;
+}
+
+.menu__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding: 48px 40px 48px 40px;
+  background-color: var(--main-dark);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 400ms linear;
+  transition: -webkit-transform 400ms linear;
+  transition: transform 400ms linear;
+  transition: transform 400ms linear, -webkit-transform 400ms linear;
+}
+.menu__container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /**
@@ -1351,6 +1413,7 @@ body {
 }
 
 .footer__container {
+  position: relative;
   padding-top: 80px;
   padding-right: 20px;
   padding-bottom: 48px;
@@ -1468,5 +1531,22 @@ body {
 @media screen and (max-width: 767px) {
   .footer-center__link--last-item {
     padding-bottom: 0;
+  }
+}
+
+.footer__copyright {
+  color: #8491a0;
+}
+@media screen and (min-width: 767px) {
+  .footer__copyright {
+    width: 311px;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__copyright {
+    width: auto;
   }
 }/*# sourceMappingURL=main.css.map */
