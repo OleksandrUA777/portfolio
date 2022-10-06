@@ -10,7 +10,7 @@
    @media screen and (min-width: 768px) {
       @include section(80px, 80px);
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       @include section(120px, 120px);
    }
 }
@@ -24,7 +24,7 @@
       flex-direction: row;
       gap: 23px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       gap: 72px;
    }
 }
@@ -61,7 +61,7 @@
    @media screen and (min-width: 768px) {
       margin-bottom: 64px;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       margin-bottom: 120px;
    }
 }
@@ -70,7 +70,7 @@
 
    border: 1px solid #5b6876;
 
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       padding: 64px;
    }
 }
@@ -86,7 +86,7 @@
    }
    @media screen and (min-width: 768px) {
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       width: 508px;
    }
 }

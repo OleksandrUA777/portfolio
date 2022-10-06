@@ -10,7 +10,7 @@
    @media screen and (min-width: 768px) {
       @include section(80px, 80px);
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1440px) {
       @include section(120px, 120px);
    }
 
@@ -23,7 +23,7 @@
          flex-direction: row;
       }
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1440px) {
          gap: 29px;
          padding-right: 182px;
          padding-left: 182px;
@@ -39,7 +39,7 @@
          @include fonts;
          margin-bottom: 24px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1440px) {
       }
    }
 
@@ -50,7 +50,7 @@
       @media screen and (min-width: 768px) {
          width: 320px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1440px) {
          width: 522px;
       }
    }
@@ -61,7 +61,7 @@
       @media screen and (min-width: 768px) {
          width: 332px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1440px) {
          width: 526px;
       }
    }
@@ -80,6 +80,9 @@
       display: block;
       width: 100%;
       height: 50px;
+      @media screen and (max-width: 359px) {
+         width: auto;
+      }
    }
 
    &-field__comment {
@@ -92,7 +95,7 @@
       @media screen and (min-width: 768px) {
          width: 332px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1440px) {
          width: 526px;
       }
    }
