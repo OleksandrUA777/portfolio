@@ -13,10 +13,6 @@
    cursor: pointer;
 
    transition: fill 250ms var(--main-transition);
-   &:hover,
-   &:focus {
-      fill: var(--purple-color);
-   }
 
    @media screen and (min-width: 768px) {
       display: none;
@@ -25,35 +21,8 @@
 .menu__icon,
 .menu__close {
    fill: #c4c4c4;
-
-   // &:hover,
-   // &:focus {
-   //    fill: var(--purple-color);
-   // }
 }
-.menu__button {
-   display: flex;
-   align-items: center;
-   justify-content: center;
 
-   width: 40px;
-   height: 40px;
-   padding: 0;
-
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
-
-   transition: fill 250ms var(--main-transition);
-   &:hover,
-   &:focus {
-      fill: var(--main-accent);
-   }
-
-   @media screen and (min-width: 768px) {
-      display: none;
-   }
-}
 .menu__button--close {
    position: absolute;
    top: 18px;

@@ -166,9 +166,6 @@ body {
   -webkit-transition: fill 250ms var(--main-transition);
   transition: fill 250ms var(--main-transition);
 }
-.menu__button:hover, .menu__button:focus {
-  fill: var(--purple-color);
-}
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
@@ -178,34 +175,6 @@ body {
 .menu__icon,
 .menu__close {
   fill: #c4c4c4;
-}
-
-.menu__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: fill 250ms var(--main-transition);
-  transition: fill 250ms var(--main-transition);
-}
-.menu__button:hover, .menu__button:focus {
-  fill: var(--main-accent);
-}
-@media screen and (min-width: 768px) {
-  .menu__button {
-    display: none;
-  }
 }
 
 .menu__button--close {
@@ -1385,7 +1354,7 @@ body {
 }
 .form-field__comment {
   width: 320px;
-  height: 100px;
+  height: 100%;
   margin-bottom: 40px;
   resize: none;
 }
@@ -1399,9 +1368,19 @@ body {
     width: 526px;
   }
 }
+@media screen and (max-width: 359px) {
+  .form-field__comment {
+    width: 285px;
+  }
+}
 .form__button {
   width: 100%;
   padding: 24px 32px;
+}
+@media screen and (max-width: 359px) {
+  .form__button {
+    width: 285px;
+  }
 }
 
 .input {

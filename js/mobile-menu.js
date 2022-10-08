@@ -23,3 +23,9 @@
       bodyScrollLock.enableBodyScroll(document.body);
    });
 })();
+$(document).click(function (event) {
+   //if you click on anything except the modal itself or the "open modal" link, close the modal
+   if (!$(event.target).closest('.js-menu-container,.js-open-menu').length) {
+      $('body').find('.js-menu-container').removeClass('is-open');
+   }
+});

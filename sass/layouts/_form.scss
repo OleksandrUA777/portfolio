@@ -87,7 +87,7 @@
 
    &-field__comment {
       width: 320px;
-      height: 100px;
+      height: 100%;
       margin-bottom: 40px;
 
       resize: none;
@@ -98,11 +98,18 @@
       @media screen and (min-width: 1440px) {
          width: 526px;
       }
+      @media screen and (max-width: 359px) {
+         width: 285px;
+      }
    }
 
    &__button {
       width: 100%;
       padding: 24px 32px;
+
+      @media screen and (max-width: 359px) {
+         width: 285px;
+      }
    }
 }
 .input {
