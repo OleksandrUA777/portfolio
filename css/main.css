@@ -472,7 +472,7 @@ body {
 @media screen and (min-width: 1440px) {
   .header {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     text-align: center;
     left: 72px;
@@ -493,6 +493,11 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.header__bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
 /**

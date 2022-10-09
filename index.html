@@ -28,26 +28,26 @@
 
    <body>
       <!-- Header -->
-      <header class="header">
+      <header class="header header__js">
          <div class="container header__container">
             <nav class="nav">
-               <a href="./index.html" class="logo nav__logo">
+               <a class="logo nav__logo" href="#hero">
                   <svg width="90" height="35" class="logo__icon">
                      <use href="./img/icons.svg#logo"></use>
                   </svg>
                </a>
                <ul class="list nav__list">
                   <li class="nav__item">
-                     <a href="" class="nav__link link">Experience</a>
+                     <a href="#experience" class="nav__link link">Experience</a>
                   </li>
                   <li class="nav__item">
-                     <a href="" class="nav__link link">Work</a>
+                     <a href="#work" class="nav__link link">Work</a>
                   </li>
                   <li class="nav__item">
-                     <a href="" class="nav__link link">Photography</a>
+                     <a href="#photos" class="nav__link link">Photography</a>
                   </li>
                   <li class="nav__item">
-                     <a href="" class="nav__link link">Contact</a>
+                     <a class="nav__link link" href="#contact">Contact</a>
                   </li>
                </ul>
             </nav>
@@ -64,7 +64,7 @@
          </div>
       </header>
       <!-- Hero -->
-      <section class="section hero">
+      <section class="section hero" id="hero">
          <div class="container hero__container">
             <div class="hero__wrapper">
                <!-- Desktop -->
@@ -104,7 +104,7 @@
       </section>
 
       <!-- Companies -->
-      <section class="section companies">
+      <section class="section companies" id="experience">
          <div class="container companies__container">
             <p class="companies__title" data-aos="fade-right" data-aos-duration="1000">work experience</p>
             <h2 class="companies__header" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
@@ -312,7 +312,7 @@
          </div>
       </section>
       <!-- Works -->
-      <section class="section works">
+      <section class="section works" id="work">
          <div class="container works__container">
             <div class="grid__container">
                <div class="grid__header-text">
@@ -676,7 +676,7 @@
          </div>
       </section>
       <!-- Photos -->
-      <section class="section photos">
+      <section class="section photos" id="photos">
          <div class="container photos__container">
             <h2 class="photos__title">Photography</h2>
             <p class="photos__description">
@@ -860,7 +860,7 @@
          </div>
       </section>
       <!-- Form -->
-      <section class="section form">
+      <section class="section form" id="contact">
          <div class="container form__container">
             <div class="form__wrapper">
                <h2 class="form__title" data-aos="fade-right" data-aos-duration="1000">Let’s get started</h2>
@@ -964,6 +964,10 @@
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+      <!-- Header scroll -->
+      <script src="./js/header-scroll.js"></script>
+      <!-- Anchor scroll -->
+      <script type="module" src="./js/anchor-skroll.js"></script>
       <script src="./js/slider.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="./js/animation.js"></script>
